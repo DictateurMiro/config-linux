@@ -1,6 +1,9 @@
 #!/bin/bash
 
-read -s -p "Entrez le mot de passe pour le nouvel utilisateur : " password
+echo -n "Entrez le mot de passe pour le nouvel utilisateur : "
+stty -echo
+read password
+stty echo
 echo
 
 sudo useradd -m -s /bin/bash miro
