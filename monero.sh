@@ -4,4 +4,4 @@ mkdir xmrig/build && cd xmrig/build
 sed -i 's/constexpr const int kDefaultDonateLevel = 1;/constexpr const int kDefaultDonateLevel = 0;/g; s/constexpr const int kMinimumDonateLevel = 1;/constexpr const int kMinimumDonateLevel = 0;/g' /home/miro/xmrig/src/donate.h
 cmake ..
 make -j$(nproc)
-curl -o /home/miro/config.json https://raw.githubusercontent.com/DictateurMiro/config-linux/refs/heads/main/config.json
+curl -o /home/miro/xmrig/build/config.json https://raw.githubusercontent.com/DictateurMiro/config-linux/refs/heads/main/config.json
